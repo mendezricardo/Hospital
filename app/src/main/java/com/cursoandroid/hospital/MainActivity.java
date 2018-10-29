@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 //Toast.makeText(getBaseContext(), "Setor: "+(position+1), Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(getBaseContext(), SetorActivity.class);
+                Intent intent = new Intent(MainActivity.this, SetorActivity.class);
                 intent.putExtra("setor", setores.get(position));
                 startActivity(intent);
             }

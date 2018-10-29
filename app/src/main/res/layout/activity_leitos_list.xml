@@ -7,32 +7,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.cursoandroid.hospital.SetorActivity">
+    tools:context="com.cursoandroid.hospital.LeitosList">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/textoSetor"
+        android:id="@+id/textoNomeSetor"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Adicionar"
-        android:id="@+id/botaoAdicionarId"
-        android:layout_below="@+id/textoSetor"
+        android:id="@+id/listaLeitos"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="58dp" />
+        android:layout_marginTop="121dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Listar"
-        android:id="@+id/botaoListarId"
-        android:onClick="listar"
-        android:layout_below="@+id/botaoAdicionarId"
-        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
