@@ -7,23 +7,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.cursoandroid.hospital.MainActivity">
+    tools:context="com.cursoandroid.hospital.SetorActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Menu Principal"
-        android:id="@+id/textView"
+        android:id="@+id/textoSetor"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <ListView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/setores"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="44dp" />
+        android:text="Adicionar"
+        android:id="@+id/botaoAdicionarId"
+        android:layout_below="@+id/textoSetor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar"
+        android:id="@+id/botaoListarId"
+        android:layout_below="@+id/botaoAdicionarId"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
